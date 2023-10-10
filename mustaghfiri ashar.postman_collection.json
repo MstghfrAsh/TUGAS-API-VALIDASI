@@ -1,0 +1,107 @@
+{
+	"info": {
+		"_postman_id": "60e17fdc-fc1c-4e46-8476-7ba293d5df55",
+		"name": "mustaghfiri ashar",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30399612"
+	},
+	"item": [
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"fullName\": \"mustaghfiri\",\r\n  \"email\": \"mustaghfiriashar3@gmail.com\",\r\n  \"password\": \"123Must##\",\r\n  \"bio\": \"ngerjain tugas si bang\",\r\n  \"dob\": \"2001-11-27\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:1945/auth/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1945",
+					"path": [
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"mustaghfiri173@gmail.com\",\r\n  \"password\": \"123Ashar##\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:1945/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1945",
+					"path": [
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:1945/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1945",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "userid",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:1945/users/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1945",
+					"path": [
+						"users",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
